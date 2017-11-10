@@ -1,12 +1,21 @@
-var app = require("express");
+var express = require("express");
 var firebase = require("firebase");
 
-app.use('/static', express.static('static'));
-app.use('/node_modules',express.static('node_modules'));
+var path = require("path");
+app = express();
+
+app.use(express.static(path.join(__dirname, 'static')));
+app.use(express.static(path.join(__dirname, 'node_modules')));
 
 
 app.get("/", function(req, res) {
-    res.sendfile("./index.html");
+    res.sendfile("static/index.html");
 } )
 
-app.listen(3000);
+app.get("/main", function(req, res) {
+    res.sendfile("static/main.html");
+} )
+
+console.log(process.env.IP);
+
+app.listen(process.env.PORT, process.env.IP);
