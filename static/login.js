@@ -22,6 +22,4 @@ function doLogin() {
   }, function(error) {
     // An error happened.
   });
-
-   
 }
