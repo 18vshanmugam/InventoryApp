@@ -1,0 +1,25 @@
+{
+  "name": "inventoryapp",
+  "version": "1.0.0",
+  "description": "inventory app for Downingtown STEM",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "firebase": "^4.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Downingtown-STEM-Academy/InventoryApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Downingtown-STEM-Academy/InventoryApp/issues"
+  },
+  "homepage": "https://github.com/Downingtown-STEM-Academy/InventoryApp#readme"
+}
